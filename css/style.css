@@ -199,11 +199,19 @@ form .ls-btn-custom {
   font-size: 20px;
 }
 
+.ls-footer__top__margin {
+  margin: 15px 0;
+}
+
+.ls-footer__top__padding {
+  padding: 35px 0;
+}
+
+/* FOOTER BOTTOM */
 .ls-footer__bottom {
   background-color: #2c3e50;
 }
 
-/* FOOTER BOTTOM */
 .ls-footer__bottom p {
   font-size: 14px;
 }
