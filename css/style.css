@@ -1,7 +1,6 @@
 /********** GLOBAL **********/
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: white;
 }
@@ -33,13 +32,52 @@ h2 {
 
 /********** HEADER **********/
 header {
+  display: flex;
+  align-items: center;
   background-color: #2c3e50;
   height: 70px;
   color: white;
 }
 
-header li {
+.ls-logo {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.ls-logo:hover {
+  cursor: pointer;
+}
+
+/*menu desktop*/
+.ls-menu-desktop li {
   display: inline-block;
+}
+
+.ls-menu-desktop li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/*menu mobile*/
+.ls-menu-mobile .prova {
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 25px;
+}
+
+.ls-menu-mobile .prova i {
+  text-align: center;
+  height: 40px;
+  width: 50px;
+  line-height: 40px;
+}
+
+/*hover menu mobile*/
+.ls-menu-mobile .prova:hover {
+  cursor: pointer;
 }
 
 
