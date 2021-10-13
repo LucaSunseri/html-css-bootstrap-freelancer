@@ -13,7 +13,7 @@ h1 {
 h2 {
   font-size: 50px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .text-balck {
@@ -40,6 +40,31 @@ h2 {
 .ls-reset {
   margin: 0;
   padding: 0;
+}
+
+.ls-container-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ls-line::before,
+.ls-line::after {
+  content: " ";
+  display: inline-block;
+  width: 15%;
+  height: 5px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.ls-line.ls-bg-black::before,
+.ls-line.ls-bg-black::after {
+  background: black;
+}
+
+.ls-line .fa-star {
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 /********** HEADER **********/
@@ -75,11 +100,12 @@ header {
   text-decoration: none;
   color: #fff;
   margin-left: 20px;
+  font-weight: 600;
 }
 
 /*hover menu desktop*/
 .ls-menu-desktop li a:hover {
-  text-decoration: underline;
+  color: #1abc9c;
 }
 
 /*menu mobile*/
@@ -103,19 +129,18 @@ header {
   cursor: pointer;
 }
 
-
 /********** JUMBOTRON **********/
 .ls-Jumbotron {
   margin-top: 70px;
 }
 
-.ls-Jumbotron__container {
-  width: 80%;
-  margin: 0 auto;
+.ls-Jumbotron .ls-container-80 img {
+  width: 200px;
 }
 
-.ls-Jumbotron__container img {
-  width: 200px;
+.ls-line__container {
+  width: 40%;
+  margin: 0 auto;
 }
 
 /********** MAIN **********/
